@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 app.use(bodyParser.json());
 
-router.get('/', (req, res) => res.send('Hello World!!'));  /* This is the root path described just with a "/" */
+router.get('/', (req, res) => res.send('Hello World!!'));  
 
 router.route('/todos')
     .get((req, res) => {
